@@ -1,5 +1,7 @@
 package com.aloy.productService.model;
 
+import com.aloy.productService.dto.Coupon;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -13,6 +15,8 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+    @Transient
+    String couponCode;
 
     public long getId() {
         return id;
@@ -44,6 +48,14 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getCouponCode() {
+        return couponCode;
+    }
+
+    public void setCouponCode(String couponCode) {
+        this.couponCode = couponCode;
     }
 
     @Override
