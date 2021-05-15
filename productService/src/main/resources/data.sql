@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS PRODUCTS (
                               price DECIMAL(10,2) DEFAULT NULL
 );
 
-# INSERT INTO PRODUCTS (name, description, price) VALUES
-# ('Toothpaste', 'Colgate', '100'),
-# ('Brush', 'Oral B', '50'),
-# ('Shampoo', 'Pantene', '300');
+INSERT INTO PRODUCTS (name, description, price) VALUES
+('Toothpaste', 'Colgate', '100'),
+('Brush', 'Oral B', '50'),
+('Shampoo', 'Pantene', '300');

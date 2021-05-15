@@ -1,4 +1,4 @@
-package com.aloy.productService.repos;
+package com.aloy.productService.sqlRepos;
 
 import com.aloy.productService.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
